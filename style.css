@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('./images/istockphoto-1041512910-1024x1024.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF; /* Blue background for the navbar */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+body {
+    padding: 20px;
+    padding-top: 250px; /* Adds space at the top of the main content to account for the navbar height */
+}
+
+.navbar .logo h2 {
+    color: white; /* White text for logo */
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white; /* White text for links */
+    font-size: 1.2rem;
+}
+
+.nav-links li a:hover {
+    color: #00bcd4; /* Light cyan on hover */
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white; /* White color for hamburger icon */
+}
+
+/* Responsive Navbar - Mobile Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #007BFF; /* Keep blue background on mobile */
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-container {
+    display: none;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    background-color: #007BFF; /* Blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: white; /* White text in footer */
+}
+
+footer {
+    background-color: #007BFF; /* Blue background for footer */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    font-size: 1.1rem;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-links a:hover {
+    color: #00bcd4; /* Light cyan on hover */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF; /* Blue background for navbar */
+    padding: 10px 20px;
+    position: fixed; /* Make navbar fixed */
+    top: 0; /* Align navbar to the top */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure navbar is on top of other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better separation */
+}
+
+.navbar .logo h2 {
+    color: white; /* White text for logo */
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav-links li a:hover {
+    color: #00bcd4;
+}
+.topmargin {
+    margin-top: 70px;
+    text-align: center;
+}

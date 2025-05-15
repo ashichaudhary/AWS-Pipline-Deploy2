@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>MySite</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span>&#9776;</span> <!-- Hamburger icon -->
+            </div>
+        </nav>
+    </header>
+    <section id="bio" class="topmargin">
+        <h1>Ashish Chaudhary</h1>
+    </section>
+
+    <section id="bio">
+        <h2>About Me</h2>
+        <p>I have experience in IT industry. I am working on AWS cloud platform on verious DevOps tools. I am looking forward to work in an organization, which provides the environment for growth with competent and inclination for learning new technology.</p>
+        <p>I am an IT engineer just like a normal 9-5 person with weekend offs. So I try to make Videos when ever possible and Upload Immediately. </p>
+    </section>
+
+    <section id="photos">
+        <h2>My Photos</h2>
+        <div class="gallery">
+            <img src="./images/ImportedPhoto.753359966.17949.jpeg" alt="Photo 1">
+            <img src="./images/ImportedPhoto.753359966.181824.jpeg" alt="Photo 2">
+            <img src="./images/ImportedPhoto.753359966.187379.jpeg" alt="Photo 3">
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>My Videos</h2>
+        <div class="video-gallery">
+            <button onclick=""><a href="https://www.youtube.com/watch?v=e3CZxAGYGEg" target="_blank">Video 1</a></button>
+            <button onclick=""><a href="https://www.youtube.com/watch?v=cdOB5zUyuAM" target="_blank">Video 2</a></button>
+            <div id="video1" class="video-container">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="video2" class="video-container">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="links">
+        <h2>Useful Links</h2>
+        <ul>
+            <li><a href="http://linkedin.com/in/ashishchaudharycloud" target="_blank">Linkedin</a></li>
+            <li><a href="https://github.com/ashichaudhary" target="_blank">Github</a></li>
+            <li><a href="https://youtube.com/@ashivlogs-w6z?si=CMyXPsg1gTJKivug" target="_blank">Youtube</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My Personal Website. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@Ashivlogs2" target="_blank">YouTube</a> | 
+                <a href="https://twitter.com/@Ashishs92213446" target="_blank">Twitter</a> | 
+                <a href="http://linkedin.com/in/ashishchaudharycloud" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
